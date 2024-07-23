@@ -1,0 +1,142 @@
+body {
+
+    font-family: Arial, sans-serif;
+    margin: 0 20px;
+    padding: 0;
+    flex-direction: column;
+    align-items: center;
+}
+
+header {
+
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 300px;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.main-content{
+
+    margin: 0 20px;
+    flex-wrap: wrap;
+    padding: 2rem;
+    width: 100%;
+    max-width: 800px;
+}
+
+.home-header {
+    background-image: url('img/IOW-q1a-light.jpg');
+}
+
+.historical-header{
+    background-image: url('img/luke-paris-RSHVwil-qEc-unsplash.jpg');
+}
+
+
+input {
+    margin-right: 1rem;
+    padding: 0.5rem;
+}
+
+ul {
+    list-style-type: none;
+    padding-left: 0;
+}
+
+li {
+    padding: 10px;
+    border: 1px solid transparent;
+    transition: border 0.3s;
+}
+
+li a {
+    color: inherit;
+    text-decoration: none;
+    padding: 10px;
+    transition: border 0.3s ease;
+}
+
+li a:hover {
+    border-radius: 10px;
+    border: 1px solid black;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+th, td {
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: center;
+}
+
+th {
+    background-color: #f2f2f2;
+}
+
+p{
+    font-size: 20px;
+    margin: 0 20px;
+
+}
+
+.paragraph-container {
+    display: flex;
+    flex-direction: row;
+    gap: 3px;
+    flex-wrap: wrap;
+}
+
+.window{
+
+    color: darkgray;
+    font-size: 10px;
+    text-decoration: none;
+    padding: 10px;
+    transition: border 0.3s ease;
+    border-radius: 5px;
+    border: 1px solid black;
+    flex-direction: row;
+
+    margin: 10px;
+    margin-top: 10px;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: 250px;
+    height: 50px;
+    box-sizing: border-box;
+    text-align: center;
+    vertical-align: middle;
+
+}
+
+
+ option.time-window {
+
+     color: darkgray;
+     font-size: 10px;
+     text-decoration: none;
+     padding: 10px;
+     transition: border 0.3s ease;
+     border-radius: 5px;
+     border: 1px solid black;
+     flex-direction: row;
+     cursor: pointer;
+
+     position: absolute;
+     background-color: white;
+     box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+     z-index: 1;
+     overflow-y: auto;
+
+}
+
