@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>Historical Weather</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<header class="header historical-header">
+</header>
+<body>
+<main id="main-content">
+    <!-- API data will be displayed here -->
+    <h1>Select Weather Data</h1>
+
+    <div class="paragraph-container" id="selectedWeather0">
+        <select class="window" id="weatherSelect0">
+            <option class="time-window" id="selectedTime0" value="">Select a time</option>
+        </select>
+        <span class="window" id="selectedTemperature">Temperature</span>
+        <span class="window" id="setLatitude">Latitude</span>
+        <span class="window" id="setLongitude">Longitude</span>
+        <span class="window" id="setGenerationtime_ms">Generationtime_ms</span>
+        <span class="window" id="setUtc_offset_seconds">UTC_offset_seconds</span>
+        <span class="window" id="setTimezone">Timezone</span>
+        <span class="window" id="setElevation">Elevation</span>
+    </div>
+
+    <div class="paragraph-container" id="selectedWeather1">
+        <select class="window" id="weatherSelect1">
+            <option class="time-window" id="selectedTime1" value="">Select a time</option>
+        </select>
+        <span class="window" id="selectedRain">Rain</span>
+        <span class="window" id="setLatitude1">Latitude</span>
+        <span class="window" id="setLongitude1">Longitude</span>
+        <span class="window" id="setGenerationtime_ms1">Generationtime_ms</span>
+        <span class="window" id="setUtc_offset_seconds1">UTC_offset_seconds</span>
+        <span class="window" id="setTimezone1">Timezone</span>
+        <span class="window" id="setElevation1">Elevation</span>
+    </div>
+
+</main>
+<script src="forecast.js"></script>
+</body>
+</html>
