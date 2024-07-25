@@ -84,7 +84,7 @@ function displaySelectedWeather(data, index, elementId) {
         document.getElementById(selectedElements['selectedTemperature']).textContent = selectedElements['temperature'][index];
         document.getElementById(selectedElements['latitude']).textContent = data.latitude;
         document.getElementById(selectedElements['longitude']).textContent = data.longitude;
-        document.getElementById(selectedElements['generationtime_ms']).textContent = data.generationtime_ms;
+        document.getElementById(selectedElements['generationtime_ms']).textContent = data.generationtime_ms.toFixed(2);
         document.getElementById(selectedElements['utc_offset_seconds']).textContent = data.utc_offset_seconds;
         document.getElementById(selectedElements['timezone']).textContent = data.timezone;
         document.getElementById(selectedElements['elevation']).textContent = data.elevation;

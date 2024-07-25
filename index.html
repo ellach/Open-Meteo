@@ -9,14 +9,25 @@
    <header class = "header home-header">
    </header>
    <main>
-      <p>Please select which API weather data you wish to see.</p>
+      <div class = "next-page">
+      <p> Next Page </p>
       <nav>
          <ul>
             <li><a href="forecast.html">Weather Forecast</a></li>
-            <li><a href="historical.html">Historical Forecast</a></li>
          </ul>
       </nav>
+      </div>
+      <div class="content">
+         <div class="right-column">
 
+      <p>
+            <h2>Weather Models Explanation</h2>
+            The next page presents two models fetched from the WeatherAPI: rain and temperature.
+            Each of the models depends on time, meaning you can select the time for which you
+            want to see the temperature or rain statistics. Other parameters, such as latitude,
+            longitude, generation time, etc., are static and do not change based on the time.
+         </div>
+      </div>
    </main>
    </body>
 </html>
