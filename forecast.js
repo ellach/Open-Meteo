@@ -83,14 +83,12 @@ function resetInputFields() {
     document.getElementById('setLongitude').textContent = '';
     document.getElementById('setGenerationtime_ms').textContent = '';
     document.getElementById('setUtc_offset_seconds').textContent = '';
-    document.getElementById('setTimezone').textContent = '';
     document.getElementById('setElevation').textContent = '';
     document.getElementById('selectedRain').textContent = '';
     document.getElementById('setLatitude1').textContent = '';
     document.getElementById('setLongitude1').textContent = '';
     document.getElementById('setGenerationtime_ms1').textContent = '';
     document.getElementById('setUtc_offset_seconds1').textContent = '';
-    document.getElementById('setTimezone1').textContent = '';
     document.getElementById('setElevation1').textContent = '';
 }
 
@@ -188,7 +186,6 @@ function displaySelectedWeather(data, index, elementId) {
             'longitude': 'setLongitude',
             'generationtime_ms': 'setGenerationtime_ms',
             'utc_offset_seconds': 'setUtc_offset_seconds',
-            'timezone': 'setTimezone',
             'elevation': 'setElevation',
             'temperature': data.hourly.temperature_2m
         },
@@ -199,7 +196,6 @@ function displaySelectedWeather(data, index, elementId) {
             'longitude': 'setLongitude1',
             'generationtime_ms': 'setGenerationtime_ms1',
             'utc_offset_seconds': 'setUtc_offset_seconds1',
-            'timezone': 'setTimezone1',
             'elevation': 'setElevation1',
             'temperature': data.hourly.rain
         }
@@ -214,7 +210,6 @@ function displaySelectedWeather(data, index, elementId) {
         document.getElementById(selectedElements['longitude']).textContent = data.longitude;
         document.getElementById(selectedElements['generationtime_ms']).textContent = data.generationtime_ms.toFixed(2);
         document.getElementById(selectedElements['utc_offset_seconds']).textContent = data.utc_offset_seconds;
-        document.getElementById(selectedElements['timezone']).textContent = data.timezone;
         document.getElementById(selectedElements['elevation']).textContent = data.elevation;
     }
 }
