@@ -5,6 +5,10 @@ The main page presents two dependent location models fetched from the WeatherAPI
 By selecting a location, we fetch data such as latitude and longitude.
 Then, based on this data, we fetch the temperature and rain information for that location for one day.
 
+Instructions for Data Presentation:
+
+1) Select a location.</br>
+2) Choose the time for which you wish to see the data.</br>
 
 Usage:
 
