@@ -21,7 +21,7 @@ header {
 
 }
 
-.main-content{
+.main-content {
 
     margin: 0 20px;
     flex-wrap: wrap;
@@ -34,7 +34,7 @@ header {
     background-image: url('img/IOW-q1a-light.jpg');
 }
 
-.forecast-header{
+.forecast-header {
     background-image: url('img/luke-paris-RSHVwil-qEc-unsplash.jpg');
 }
 
@@ -55,6 +55,15 @@ li {
     transition: border 0.3s;
 }
 
+
+a {
+    display: inline-block;
+    text-decoration: none;
+    padding: 10px;
+    transition: all 0.3s ease;
+}
+
+
 li a {
     color: inherit;
     text-decoration: none;
@@ -68,32 +77,30 @@ li a:hover {
 }
 
 
-p{
+p {
     font-size: 20px;
     margin: 0 20px;
+}
+
+.option.time-window {
+
+    color: darkgray;
+    font-size: 10px;
+    text-decoration: none;
+    padding: 10px;
+    border-radius: 5px;
+    flex-direction: row;
+    cursor: pointer;
+    position: absolute;
+    background-color: white;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+    overflow-y: auto;
 
 }
 
 
- .option.time-window {
-
-     color: darkgray;
-     font-size: 10px;
-     text-decoration: none;
-     padding: 10px;
-     border-radius: 5px;
-     flex-direction: row;
-     cursor: pointer;
-
-     position: absolute;
-     background-color: white;
-     box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-     z-index: 1;
-     overflow-y: auto;
-
-}
-
-.window{
+.window {
 
     color: darkgray;
     font-size: 10px;
@@ -114,7 +121,7 @@ p{
 }
 
 
-.window>label{
+.window > label {
 
     position: relative;
     top: 1%;
@@ -129,12 +136,13 @@ p{
     transition: opacity .1s ease-in-out, transform .1s ease-in-out;
 }
 
-.window>span{
+.window > span {
     position: relative;
     top: 1%;
     left: 28%;
     z-index: 2;
 }
+
 .paragraph-container {
     display: flex;
     flex-direction: row;
@@ -145,17 +153,69 @@ p{
 .content {
     display: flex;
     width: 100%;
-    justify-content: flex-end; /* Aligns the right column to the right */
+    justify-content: flex-end;
 
 }
 
 .right-column {
-    width: 500px; /* Adjust the width as needed */
+    width: 500px;
     padding: 10px;
     margin-right: 780px;
 }
 
-.next-page{
+.next-page {
     margin-top: 100px;
     margin-left: 250px;
 }
+
+
+.search-location {
+    position: relative;
+    width: 300px;
+    margin: 20px auto;
+}
+
+#location {
+    width: 100%;
+    padding: 10px;
+    font-size: 16px;
+    box-sizing: border-box;
+    margin: 0;
+}
+
+.suggestions {
+    #border: 1px solid #ccc;
+    max-height: 150px;
+    overflow-y: auto;
+    position: absolute;
+    background-color: #fff;
+    width: 100%;
+    z-index: 1000;
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+
+}
+
+.suggestions li {
+    padding: 10px;
+    cursor: pointer;
+    border-bottom: 1px solid #ccc;
+    font-size: 14px;
+}
+
+.suggestions li:hover {
+    background-color: #f0f0f0;
+    color: #333;
+}
+
+.suggestions li.active {
+    background-color: #007bff;
+    color: #fff;
+}
+
+.suggestions li:last-child {
+    border-bottom: none;
+}
+
+

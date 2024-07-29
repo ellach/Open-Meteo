@@ -1,33 +1,32 @@
 <!DOCTYPE html>
 <html>
-   <head>
-      <meta charset="utf-8">
-       <title>"Historical Weather"</title>
-      <link rel="stylesheet" href="style.css">
-   </head>
-   <body>
-   <header class = "header home-header">
-   </header>
-   <main>
-      <div class = "next-page">
-      <p> Next Page </p>
-      <nav>
-         <ul>
-            <li><a href="forecast.html">Weather Forecast</a></li>
-         </ul>
-      </nav>
-      </div>
-      <div class="content">
-         <div class="right-column">
-
-      <p>
+<head>
+    <meta charset="utf-8">
+    <title>"Historical Weather"</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header class="header home-header">
+</header>
+<main>
+    <div class="next-page">
+        <p> Press to continue to the next page </p>
+        <nav>
+            <ul>
+                <li><a href="forecast.html">Weather Forecast</a></li>
+            </ul>
+        </nav>
+    </div>
+    <div class="content">
+        <div class="right-column">
+            <p>
             <h2>Weather Models Explanation</h2>
-            The next page presents two models fetched from the WeatherAPI: rain and temperature.
-            Each of the models depends on time, meaning you can select the time for which you
-            want to see the temperature or rain statistics. Other parameters, such as latitude,
-            longitude, generation time, etc., are static and do not change based on the time.
-         </div>
-      </div>
-   </main>
-   </body>
+            The next page presents two dependent location models fetched from the WeatherAPI: rain and temperature.
+            By selecting a location, we fetch data such as latitude and longitude.
+            Then, based on this data, we fetch the temperature and rain information for that location for one day.
+
+        </div>
+    </div>
+</main>
+</body>
 </html>

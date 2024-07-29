@@ -9,81 +9,83 @@
 </header>
 <body>
 <main id="main-content">
+
+    <div class="search-location">
+        <h1>Search Location</h1>
+        <input type="text" id="location" placeholder="Enter location" oninput="searchLocations(this.value)"
+               autocomplete="off" required>
+        <ul id="suggestions" class="suggestions"></ul>
+    </div>
+
     <h1>Temperature model</h1>
-
-
     <div class="paragraph-container" id="selectedWeather0">
-        <select class="window" id="weatherSelect0">
+        <select class="window" id="weatherSelect0" required>
             <option class="time-window" id="selectedTime0" value="">Select a time</option>
-            <label >Temperature</label>
         </select>
-
         <div class="window">
-        <span  id="selectedTemperature"></span>
-        <label >Temperature</label>
-        </div>
-
-        <div class="window">
-        <span  id="setLatitude"></span>
-        <label >Latitude</label>
+            <span id="selectedTemperature"></span>
+            <label>Temperature</label>
         </div>
         <div class="window">
-        <span  id="setLongitude"></span>
-        <label >Longitude</label>
+            <span id="setLatitude"></span>
+            <label>Latitude</label>
         </div>
         <div class="window">
-        <span  id="setGenerationtime_ms"></span>
-        <label >Generationtime_ms</label>
+            <span id="setLongitude"></span>
+            <label>Longitude</label>
         </div>
         <div class="window">
-        <span  id="setUtc_offset_seconds"></span>
-        <label >UTC_offset_seconds</label>
+            <span id="setGenerationtime_ms"></span>
+            <label>Generationtime_ms</label>
         </div>
         <div class="window">
-        <span  id="setTimezone"></span>
-        <label>Timezone</label>
+            <span id="setUtc_offset_seconds"></span>
+            <label>UTC_offset_seconds</label>
         </div>
         <div class="window">
-        <span  id="setElevation"></span>
-        <label>Elevation</label>
+            <span id="setTimezone"></span>
+            <label>Timezone</label>
+        </div>
+        <div class="window">
+            <span id="setElevation"></span>
+            <label>Elevation</label>
         </div>
     </div>
 
     <h1>Rain model</h1>
     <div class="paragraph-container" id="selectedWeather1">
-        <select class="window" id="weatherSelect1">
+        <select class="window" id="weatherSelect1" required>
             <option class="time-window" id="selectedTime1" value="">Select a time</option>
         </select>
         <div class="window">
-        <span  id="selectedRain"></span>
-           <label>Rain</label>
+            <span id="selectedRain"></span>
+            <label>Rain</label>
         </div>
         <div class="window">
-        <span  id="setLatitude1"></span>
+            <span id="setLatitude1"></span>
             <label>Latitude</label>
         </div>
         <div class="window">
-        <span  id="setLongitude1"></span>
+            <span id="setLongitude1"></span>
             <label>Longitude</label>
         </div>
         <div class="window">
-        <span  id="setGenerationtime_ms1"></span>
+            <span id="setGenerationtime_ms1"></span>
             <label>Generationtime_ms</label>
         </div>
         <div class="window">
-        <span id="setUtc_offset_seconds1"></span>
+            <span id="setUtc_offset_seconds1"></span>
             <label>UTC_offset_seconds</label>
         </div>
         <div class="window">
-        <span  id="setTimezone1"></span>
+            <span id="setTimezone1"></span>
             <label>UTC_offset_seconds</label>
         </div>
         <div class="window">
-            <span  id="setElevation1"></span>
+            <span id="setElevation1"></span>
             <label>Elevation</label>
-           </div>
+        </div>
     </div>
-
 </main>
 <script src="forecast.js"></script>
 </body>
