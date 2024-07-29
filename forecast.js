@@ -122,7 +122,7 @@ function fetchWeatherData() {
                 });
         });
     } else {
-        console.log('At least one condition is null');
+        console.log('At least one condition is not met.');
     }
 }
 
